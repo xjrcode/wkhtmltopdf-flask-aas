@@ -1,7 +1,6 @@
 PDF Generator Flask microservice
 ================================
 
-[![Travis][build svg]][build]
 [![Docker Pulls][docker pulls svg]][docker hub]
 [![License][license svg]][license]
 
@@ -12,7 +11,7 @@ Docker hub installation
 -----------------------
 
 ~~~bash
-docker run -d --name wkhtmltopdf-aas -p <hostport>:80 ciricihq/wkhtmltopdf-aas
+docker run -d --name wkhtmltopdf-aas -p <hostport>:80 xjrcode/wkhtmltopdf-aas
 ~~~
 
 Builds are automatically generated from github.
@@ -33,13 +32,13 @@ python app.py
 ### Build Docker container
 
 ~~~bash
-docker build -t ciricihq/wkhtmltopdf-aas .
+docker build -t xjrcode/wkhtmltopdf-aas .
 ~~~
 
 ### Starting Docker container
 
 ~~~bash
-docker run -d --name wkhtmltopdf-aas -p <hostport>:80 ciricihq/wkhtmltopdf-aas
+docker run -d --name wkhtmltopdf-aas -p <hostport>:80 xjrcode/wkhtmltopdf-aas
 ~~~
 
 Testing the microservice
@@ -75,9 +74,7 @@ You want to generate images? No problem, just change the `pdf` endpoint to `jpg`
 
 [pdfkit]: https://pypi.python.org/pypi/pdfkit
 [wkhtmltopdf]: https://wkhtmltopdf.org/
-[docker hub]: https://hub.docker.com/r/ciricihq/wkhtmltopdf-aas/
-[license]: https://github.com/ciricihq/wkhtmltopdf-flask-aas/blob/master/LICENSE.md
-[build]: https://travis-ci.org/ciricihq/wkhtmltopdf-flask-aas
-[docker pulls svg]: https://img.shields.io/docker/pulls/ciricihq/wkhtmltopdf-aas.svg?style=flat-square
+[docker hub]: https://hub.docker.com/repository/docker/xjrcode/wkhtmltopdf-flask-aas
+[license]: https://github.com/xjrcode/wkhtmltopdf-flask-aas/blob/master/LICENSE.md
+[docker pulls svg]: https://img.shields.io/docker/pulls/xjrcode/wkhtmltopdf-aas.svg?style=flat-square
 [license svg]: https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square
-[build svg]: https://img.shields.io/travis/ciricihq/wkhtmltopdf-flask-aas.svg?style=flat-square
